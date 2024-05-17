@@ -25,11 +25,14 @@ const connection = mysql.createConnection({
 // Connect to MySQL
 connection.connect((err) => {
     if (err) {
-        console.error('Error connecting to MySQL: ' + err.stack);
+        console.error('Error connecting to DB: ' + err.stack);
         return;
     }
-    console.log('Connected to MySQL as id ' + connection.threadId);
+    console.log('Connected to DB as id ' + connection.threadId);
 });
+
+
+
 
 // Serve static files from the default directory
 app.use(express.static(__dirname));

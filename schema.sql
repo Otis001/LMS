@@ -32,4 +32,4 @@ INSERT INTO leaderboard (name, score) VALUES
 ('Jane Smith', 90),
 ('Michael Brown', 85),
 ('Emily Jones', 80);
-);
+
