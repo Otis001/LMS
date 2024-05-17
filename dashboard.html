@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -13,7 +13,6 @@
             <ul>
                 <li><a href="/leaderboard">Leaderboard</a></li>
                 <li><a href="/course-content">Course Content</a></li>
-                <!-- Add more navigation links as needed -->
             </ul>
         </nav>
     </header>
@@ -22,12 +21,25 @@
             <h2>Hello, <span id="user-fullname"></span>!</h2>
             <p>Welcome to your personalized dashboard.</p>
         </section>
+        <section id="course-selection">
+            <h2>Select Your Courses</h2>
+            <form id="course-selection-form">
+                <select name="courses" id="courses-select">
+                    <!-- Options will be dynamically populated -->
+                </select>
+                <button type="submit">Add Course</button>
+            </form>
+        </section>
+        <section id="selected-courses">
+            <h2>Your Courses</h2>
+            <ul id="courses-list">
+                <!-- Selected courses will be dynamically populated -->
+            </ul>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 Your LMS</p>
     </footer>
-
-    <!-- Include your client-side JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
